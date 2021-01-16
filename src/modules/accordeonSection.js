@@ -1,6 +1,20 @@
-const accordeonSection = () => {    
+const accordeonSection = () => {   
 	
-	var accordion = document.querySelector('.accordeon'),
+	const accTab = document.querySelectorAll('.acc-tab');	
+
+	for (let i = 0; i < accTab.length; i++) {
+		accTab[i].addEventListener('click', function() {
+		this.classList.toggle('active');
+		let accTabContent = this.nextElementSibling;
+			if (accTabContent.style.maxHeight){
+				accTabContent.style.maxHeight = null;
+			} else {
+				accTabContent.style.maxHeight = accTabContent.scrollHeight + "px";
+			} 
+		});
+	}
+	
+	/* var accordion = document.querySelector('.accordeon'),
 		element = accordion.querySelectorAll('.element');
 
 		element.forEach(elem => elem.addEventListener('click', () => {
@@ -33,7 +47,7 @@ const accordeonSection = () => {
 	}
 	function showText(textEl) {
 		textEl.style.height = textEl.scrollHeight + 'px';
-	}
+	} */
 };
 
 export default accordeonSection;

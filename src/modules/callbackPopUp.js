@@ -17,7 +17,7 @@ const callbackPopUp = () => {
 
         body.addEventListener('click', (event) => {
             let target = event.target;
-            if(target.classList.contains('button-services') || target.closest('.element') || target.classList.contains('callback-btn')) {
+            if(target.classList.contains('button-services') || target.closest('.element-serv') || target.classList.contains('callback-btn')) {
                 event.preventDefault();
                 showPopUp();
             }

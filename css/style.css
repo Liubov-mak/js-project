@@ -1015,6 +1015,10 @@ h3 {
 p {
 	margin-top: 20px;
 }
+.accordeon .acc-tab.active {
+	background: #e9bb26;
+	color: #fff !important;
+}
 .accordeon .element {
 	margin-bottom: 6px;
 	background: #fff;
