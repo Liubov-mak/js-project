@@ -1003,11 +1003,11 @@ video#video_background {
 .accordeon .element-content {	
 	font-size: 13px;
 	color: #888885;
-	height: 0;
 	overflow: hidden;			
 	padding-left: 20px;
-	padding-right: 20px;
-	transition: height 0.7s;	
+	padding-right: 20px;	
+	max-height: 0;
+    transition: max-height 0.5s ease-out;	
 }
 h3 {
 	margin-bottom: 0;
@@ -1039,15 +1039,7 @@ p {
 	-o-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
 }
-.accordeon .element.active .title {
-	background: #e9bb26;
-	color: #fff !important;
-}
-.accordeon .title.select {
-	background: #e9bb26;
-	color: #fff !important;
-}
-.accordeon .element .title:before {
+.accordeon .element .acc-tab:before {
 	font-family: "FontAwesome";
 	content: "";
 	display: block;
@@ -1065,14 +1057,12 @@ p {
 	-o-transition: all 200ms ease-out;
 	transition: all 200ms ease-out;
 }
-.accordeon .title.select::before,
-.accordeon .element.active .title:before {
+.accordeon .acc-tab.active:before {
 	background: url(../images/minus.png) 50% 50% no-repeat #333;
 }
-.accordeon > div:first-of-type .element-content {
-	/* display: block; */
-	height: 100%;
-}
+/* .accordeon > div:first-of-type .element-content {	
+	max-height: 100%;
+} */
 .accordeon .element .title:hover:before {
 	background-color: #333;
 }

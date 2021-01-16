@@ -49,7 +49,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nvar accordeonSection = function accordeonSection() {\n  var accTab = document.querySelectorAll('.acc-tab');\n\n  for (var i = 0; i < accTab.length; i++) {\n    accTab[i].addEventListener('click', function () {\n      this.classList.toggle('active');\n      var accTabContent = this.nextElementSibling;\n\n      if (accTabContent.style.maxHeight) {\n        accTabContent.style.maxHeight = null;\n      } else {\n        accTabContent.style.maxHeight = accTabContent.scrollHeight + \"px\";\n      }\n    });\n  }\n  /* var accordion = document.querySelector('.accordeon'),\r\n  \telement = accordion.querySelectorAll('.element');\r\n  \n  \telement.forEach(elem => elem.addEventListener('click', () => {\r\n  \t\telem.classList.toggle('active');\r\n  \t}));\r\n  \n  accordion.addEventListener('click', change);\r\n  function change(event) {\r\n  \tvar target = event.target;\r\n  \tif (target.tagName !== 'H3') {\r\n  \t\treturn;\r\n  \t}\r\n  \tif (target.classList.contains('select')) {\r\n  \t\thideAll();\r\n  \t} else {\r\n  \t\thideAll();\r\n  \t\ttarget.classList.add('select');\r\n  \t\tshowText(target.nextElementSibling);\r\n  \t}\r\n  }\r\n  function hideAll() {\r\n  \tvar h3El = accordion.querySelectorAll('h3');\r\n  \tvar divEl = accordion.querySelectorAll('.element-content');\r\n  \tfor (var i = 0; i < h3El.length; i++) {\r\n  \t\th3El[i].classList.remove('select');\r\n  \t}\r\n  \tfor (var i = 0; i < divEl.length; i++) {\r\n  \t\tdivEl[i].style.height = '0';\r\n  \t}\r\n  }\r\n  function showText(textEl) {\r\n  \ttextEl.style.height = textEl.scrollHeight + 'px';\r\n  } */\n\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (accordeonSection);\n\n//# sourceURL=webpack://js-page/./src/modules/accordeonSection.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => __WEBPACK_DEFAULT_EXPORT__\n/* harmony export */ });\nvar accordeonSection = function accordeonSection() {\n  var accTab = document.querySelectorAll('.acc-tab');\n\n  for (var i = 0; i < accTab.length; i++) {\n    accTab[i].addEventListener('click', function () {\n      this.classList.toggle('active');\n      var accTabContent = this.nextElementSibling;\n\n      if (accTabContent.style.maxHeight) {\n        accTabContent.style.maxHeight = null;\n      } else {\n        accTabContent.style.maxHeight = accTabContent.scrollHeight + \"px\";\n      }\n    });\n  }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (accordeonSection);\n\n//# sourceURL=webpack://js-page/./src/modules/accordeonSection.js?");
 
 /***/ }),
 
@@ -521,7 +521,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "267504772519eead1e28"
+/******/ 		__webpack_require__.h = () => "1aaedca5758a0e6a7a4c"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
