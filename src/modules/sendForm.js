@@ -45,9 +45,9 @@ const sendForm = () => {
 		const lengthVerify = body => {
 			if (body.fio === '' || body.tel === '') {
 				return false;
-			} else if (body.user_name < 3) {
+			} else if (body.fio < 2) {
 				return false;
-			} else if (body.fio.length <= 10 || body.tel.length >= 13) {
+			} else if (body.tel.length >= 13) {
 				return false;
 			} else {
 				return true;
@@ -83,6 +83,7 @@ const sendForm = () => {
 	fioCallback.addEventListener('input', () => { // в поле "имя" только кириллица и пробел
 			const regex = /[^А-ЯЁа-яё\s]+/g;
 			fioCallback.value = fioCallback.value.replace(regex, '');
+			/* fioCallback.value = fioCallback.value.replace(/\w{52,}/g, ''); */
 	});
 	telCallback.addEventListener('input', () => {
 		telCallback.value = telCallback.value.replace(/[^0-9+]/g, '');
