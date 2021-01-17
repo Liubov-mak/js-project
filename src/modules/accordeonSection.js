@@ -1,15 +1,4 @@
 const accordeonSection = () => { 	
-
-	/* [].forEach.call(document.querySelectorAll('.acc-tab'), function(item) {
-		item.addEventListener('click', function(e) {			
-			let display=(this.nextElementSibling.style.display==='block') ? 'none' : 'block';
-			[].forEach.call(document.querySelectorAll('.acc-content'), function(panels) {
-				panels.style.display='none';				
-			});
-			this.nextElementSibling.style.display=display;			
-		});
-	}); */
-	
 	const accTab = document.querySelectorAll('.acc-tab');				
 		
 	for (let i = 0; i < accTab.length; i++) {
@@ -34,3 +23,13 @@ const accordeonSection = () => {
 };
 
 export default accordeonSection;
+
+/* [].forEach.call(document.querySelectorAll('.acc-tab'), function(item) {
+		item.addEventListener('click', function(e) {			
+			let display=(this.nextElementSibling.style.display==='block') ? 'none' : 'block';
+			[].forEach.call(document.querySelectorAll('.acc-content'), function(panels) {
+				panels.style.display='none';				
+			});
+			this.nextElementSibling.style.display=display;			
+		});
+	}); */

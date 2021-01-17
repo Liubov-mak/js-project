@@ -115,21 +115,7 @@ const servicesSlider = () => {
 				}
 				this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
 			}
-		}
-		
-		/* autoPlay() {
-			let autoplay = setInterval(() => {
-				this.nextSlider();					
-			}, 3000);
-			
-			this.main.addEventListener('mouseover', (event) => {
-				clearInterval(autoplay);
-			});
-			
-			this.main.addEventListener('mouseout', (event) => {
-				this.autoPlay();
-			});
-		} */
+		}	
 	}
 	const options = {
 		main: '.services-elements', // из верстки класс

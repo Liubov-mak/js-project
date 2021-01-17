@@ -42,16 +42,7 @@ const sendForm = () => {
 			}, 2000);
 		};
 
-		const lengthVerify = body => {			
-			/* if (body.user_name === '' || body.user_phone === '' || body.user_email === "") {
-				return false;
-			} else if (body.user_name < 2) {
-				return false;
-			} else if (body.user_phone.length < 7 || body.user_phone.length >= 13) {
-				return false;
-			} else {
-				return true;
-			} */
+		const lengthVerify = body => {				
 			if (body.fio === '' || body.tel === '') {
 				return false;
 			} else if (body.fio < 2) {
